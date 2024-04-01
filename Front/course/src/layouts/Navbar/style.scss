@@ -1,0 +1,122 @@
+.navbar {
+    width: 100%;
+    max-width: 100%;
+    min-height: 13vh;
+    transition: all 500ms;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    background-color: #21171b;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+  
+
+    .nav {
+        width: 90%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+
+            li {
+                a {
+                    font-size: 13px;
+                    color: white;
+                    font-family: 'Barlow Condensed', sans-serif;
+                    font-weight: 800;
+
+                }
+
+                .active {
+                    color: #ff0896;
+                }
+
+                i {
+                    font-size: 10px;
+                }
+
+            }
+
+        }
+
+        .icon {
+            display: flex;
+            gap: 13px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+.sticky {
+    position: fixed;
+    background-color: #21171b;
+    min-height: 12vh;
+    border-bottom: 1px solid #aa8453;
+
+.nav{
+    ul {
+        display: flex;
+        gap: 30px;
+
+        li {
+            a {
+                font-size: 13px;
+                color: white !important;
+                font-family: 'Barlow Condensed', sans-serif;
+
+            }
+
+            .active {
+                color: #aa8453 !important;
+            }
+
+            i {
+                font-size: 10px;
+            }
+
+        }
+
+    }
+    .icon {
+        display: flex;
+        gap: 13px;
+        color: white !important;
+        cursor: pointer;
+    }
+}
+
+    .head {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 300px) and (max-width:600px) {
+    .navbar {
+        display: none;
+
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width:900px) {
+    .navbar {
+        display: none;
+
+    }
+}

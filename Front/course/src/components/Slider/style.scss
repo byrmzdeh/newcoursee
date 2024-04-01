@@ -1,0 +1,184 @@
+.mySwiper {
+    width: 100%;
+    height: 100vh;
+
+    .photo {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 90vh;
+
+        }
+
+        .number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 40%;
+            transform: rotate(-90deg);
+            gap: 10px;
+
+            .phone {
+                width: 50px;
+                height: 50px;
+                border: 1px solid white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    font-size: 30px;
+                    color: white;
+                }
+
+            }
+
+            .reser {
+                h3 {
+                    font-size: 15px;
+                    color: #dfdfdf;
+                    letter-spacing: 1px;
+                }
+
+                p {
+                    font-size: 28px;
+                    color: #de9c29;
+                }
+            }
+        }
+
+        .write {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            top: 23%;
+            left: 30%;
+
+            h1 {
+                font-family: 'Gilda Display', serif;
+                text-align: center;
+                color: white;
+                font-size: 25px;
+                font-weight: bold;
+                line-height: 1.35em;
+
+            }
+
+            h4 {
+                font-family: 'Barlow Condensed', serif;
+                font-weight: 400;
+                font-size: 15px;
+                color: white;
+                letter-spacing: 6px;
+                text-transform: uppercase;
+            }
+
+            .icon {
+                letter-spacing: 7px;
+
+                i {
+                    color: #de9c29;
+                    font-size: 20px;
+                }
+            }
+
+            button {
+                width: 130px;
+                height: 50px;
+                border: 1px solid white;
+                color: white;
+                background-color: transparent;
+                transition: 0.3s;
+
+                &:hover {
+
+                    background-color: white;
+                    color: #aa8543;
+                }
+            }
+        }
+    }
+
+
+}
+
+// .swiper-pagination-bullet-active{
+//     color: #aa8453 !important;
+// }
+// .swiper-pagination-bullet{
+//     color: #aa8453 !important;
+// }
+
+// .swiper-slide{
+//     color: #aa8453 !important;
+// }
+
+// .swiper-slide-active{
+//     color: #aa8453 !important;
+// }
+
+@media only screen and (min-width: 300px) and (max-width:600px) {
+    .mySwiper {
+
+
+        .photo {
+            .number {
+                display: none;
+            }
+
+            .write {
+                top: 30%;
+                left: 10%;
+
+                h1 {
+                    font-size: 20px;
+                }
+
+                h4 {
+                    font-size: 10px;
+                }
+
+                i {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width:900px) {
+    .mySwiper {
+
+
+        .photo {
+            .number {
+                display: none;
+            }
+
+            .write {
+                top: 30%;
+                left: 27%;
+                font-size: 20px;
+
+                h1 {
+                    font-size: 20px;
+                }
+
+                h4 {
+                    font-size: 10px;
+                }
+
+                i {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
